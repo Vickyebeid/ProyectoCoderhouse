@@ -1,0 +1,324 @@
+/*header*/
+
+/*index*/
+header {
+    background-color:white;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+.logo {
+    width: 20%;
+    height: 20%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    margin-left: 10px;
+
+    }
+  
+.navbar li:first-child {
+    margin-left: 0;
+}
+
+.navbar li a {
+    text-decoration:underline;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    text-transform: uppercase;
+    color: black;
+
+}
+  
+.contenedorimagen {
+    position: relative;
+    margin-bottom: 8%;
+  }
+  
+  .textosuperpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Estilos adicionales */
+    color: rgba(0, 0, 12, 0.959);
+    font-size: 25px;
+    /* ... */
+  }
+
+/*main*/
+
+/*index*/
+
+.imagenprincipal {
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    background-color:white;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 6%;
+
+    
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 5%;
+}
+
+/*CARROUSEL*/
+
+.carousel slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-icon-width {
+  width: 1rem
+}
+
+#carouselExampleIndicators {
+  height: 700px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: -100px;
+  overflow: hidden;
+
+}
+
+/*viejo*/
+#contenedoritemscarrousel {
+    height: 700px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: -100px;
+    overflow: hidden;
+
+}
+
+.itemcarrousel{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tarjetacarrousel {
+    height: 100%;
+    margin-top: 10%;
+}
+
+.flechascarrousel {
+    position: absolute;
+    top: 50%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+ }
+
+
+i {
+    color: black;
+    letter-spacing: 2px;
+}
+
+img {
+    height: 80%;
+}
+
+.columnas {
+    column-count: 2;
+    column-gap: 20px;
+    height: auto;
+  }
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 95%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5px;
+} 
+
+.icono1 {
+    height: 100px;
+    margin: auto;
+    display: block; /* Convertir en bloque */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-bottom: 6%;
+}
+
+.icono2 {
+    height: 88px;
+    margin: auto;
+    display: block; /* Convertir en bloque */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-bottom: 6%;
+}
+
+.icono3 {
+    height: 88px;
+    margin: auto;
+    display: block; /* Convertir en bloque */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-bottom: 6%;
+}
+
+
+.icono4 {
+    height: 88px;
+    margin: auto;
+    display: block; /* Convertir en bloque */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-bottom: 6%;
+}
+
+/*tienda*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .product h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .product p {
+    margin-bottom: 10px;
+  }
+  
+  .product .price {
+    font-weight: bold;
+    color: #c0392b;
+  }
+
+  /*SOBRE NOSOTROS*/
+  .about-us {
+    margin: 30px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .about-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    margin-bottom: 15px;
+  }
+
+  /*rutinas*/
+
+  section {
+    margin: 30px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  section h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  section p {
+    margin-bottom: 15px;
+  }
+  
+  section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  section li {
+    margin-bottom: 5px;
+  }
+  
+  
+
+/*footer*/
+
+footer {
+    background-color: white;
+    animation:forwards;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    
+}
+
+.footer .h2 {
+    letter-spacing: 0px;
+}
+
+.logo-redes {
+    height: 30px;
+    width: 30px;
+    
+}
+
