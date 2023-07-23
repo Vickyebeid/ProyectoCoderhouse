@@ -249,7 +249,7 @@ p {
 
   /*rutinas*/
 
-  section {
+  .rutinas {
     height:max-content;
     margin: 30px;
     padding: 30px;
@@ -258,28 +258,36 @@ p {
     font-family: Arial, sans-serif;
   }
 
-  section h1 {
+  .rutinas h1 {
     font-size: 24px;
     margin-bottom: 20px;
   }
   
-  section p {
+  .rutinas p {
     margin-bottom: 15px;
     text-align: left;
   }
   
-  section ul {
+  .rutinas ul {
     list-style-type: disc;
     margin-left: 20px;
     margin-bottom: 15px;
   }
   
-  section li {
+  .rutinas li {
     margin-bottom: 5px;
   }
   
-  
+  .rutinas img {
+    width: 100%;
+  }
 
+
+/*Compras*/
+
+.compras p{
+  text-align: center;
+}
 /*footer*/
 
 footer {
