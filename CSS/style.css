@@ -50,28 +50,25 @@ header {
   
 .contenedorimagen {
     position: relative;
+    background-image: url("../ASSETS/portada.jpg");
+    padding: 15%;
+    background-size:cover;
     margin-bottom: 8%;
+    width: 100wh;
   }
   
-  .textosuperpuesto {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* Estilos adicionales */
-    color: rgba(0, 0, 12, 0.959);
-    font-size: 25px;
-    /* ... */
+  .contenedorimagen h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 300%;
+    font-weight:900;
   }
 
 /*main*/
 
 /*index*/
 
-.imagenprincipal {
-    width: 100%;
-    height: 100%;
-}
 
 main{
     background-color:white;
@@ -122,17 +119,6 @@ i {
     letter-spacing: 2px;
 }
 
-img {
-    height: 80%;
-}
-
-
-.columnas {
-    column-count: 2;
-    column-gap: 20px;
-    height: auto;
-  }
-
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 95%;
@@ -144,35 +130,33 @@ p {
 
 .icono1 {
     height: 100px;
-    margin: auto;
     display: block; /* Convertir en bloque */
-    margin: 0 auto; /* Centrar horizontalmente */
-    margin-bottom: 6%;
+    margin: 10% auto; /* Centrar horizontalmente */
 }
 
 .icono2 {
     height: 88px;
-    margin: auto;
+    align-content: center;
     display: block; /* Convertir en bloque */
-    margin: 0 auto; /* Centrar horizontalmente */
-    margin-bottom: 6%;
+    margin: 10% auto; /* Centrar horizontalmente */
 }
 
 .icono3 {
     height: 88px;
-    margin: auto;
     display: block; /* Convertir en bloque */
-    margin: 0 auto; /* Centrar horizontalmente */
-    margin-bottom: 6%;
+    margin: 10% auto; /* Centrar horizontalmente */
 }
-
 
 .icono4 {
     height: 88px;
-    margin: auto;
     display: block; /* Convertir en bloque */
-    margin: 0 auto; /* Centrar horizontalmente */
-    margin-bottom: 6%;
+    margin: 10% auto; /* Centrar horizontalmente */
+}
+
+.box-iconos{
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5%;
 }
 
 /*tienda*/
@@ -281,6 +265,7 @@ p {
   
   section p {
     margin-bottom: 15px;
+    text-align: left;
   }
   
   section ul {
@@ -298,44 +283,26 @@ p {
 /*footer*/
 
 footer {
-    background-color: white;
-    animation:forwards;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-top: 40px;
+    padding-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
     
 }
 
-.footer .h2 {
-    letter-spacing: 0px;
+footer div {
+  padding: 3%;
+}
+
+footer span {
+  font-size: 0.7em;
 }
 
 .logo-redes {
     height: 30px;
     width: 30px;
+    align-content: center;
     
-}
-
-/*GRID*/
-
-.grid_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.3fr 0.3fr 3em;
-  grid-template-areas: 
-  "cabeza cabeza cabeza"
-  "img img img" 
-  "footer footer footer";
-}
-
-.cabeza {
-  grid-area: cabeza;
-}
-
-.galeria{
-  grid-area: img;
-}
-.pie {
-  grid-area: footer;
 }
 
