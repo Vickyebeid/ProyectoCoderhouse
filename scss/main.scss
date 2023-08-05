@@ -1,0 +1,281 @@
+@import'./vars';
+
+/*header*/
+
+/*index*/
+header {
+    background-color: $color-white;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+.logo {
+
+    height: 30px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: auto;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    margin-left: 10px;
+
+    }
+  
+.navbar li:first-child {
+    margin-left: 0;
+}
+
+.navbar li a {
+    text-decoration:underline;
+    font-family: $font-family;
+    font-size: $font-size-small;
+    text-transform: uppercase;
+    color: black;
+
+}
+  
+.contenedorimagen {
+    position: relative;
+    background-image: url("../ASSETS/portada.jpg");
+    padding: 15%;
+    background-size:cover;
+    margin-bottom: 8%;
+    width: 100wh;
+  }
+  
+  .contenedorimagen h1 {
+    font-family: $font-family;
+    text-align: center;
+    color: whitesmoke;
+    font-size: $font-size-large;
+    font-weight:$font-weight-bold;
+  }
+
+/*main*/
+
+/*index*/
+
+
+main{
+    background-color:$color-white;
+}
+
+
+h1 {
+    font-family: $font-family;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 6%;
+
+    
+}
+
+h2 {
+    font-family: $font-family;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 15%;
+}
+
+/*CARROUSEL*/
+
+.carousel slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20%;
+}
+
+.carousel-control-icon-width {
+  width: 1rem
+}
+
+#carouselExampleIndicators {
+  height: 700px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: -100px;
+  overflow: hidden;
+
+}
+
+i {
+    color: black;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: $font-family;
+    font-size: 95%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    overflow: auto;
+} 
+
+.icono1 {
+    height: 100px;
+    display: block; /* Convertir en bloque */
+    margin: 10% auto; /* Centrar horizontalmente */
+}
+
+.icono2 {
+    height: 88px;
+    align-content: center;
+    display: block; /* Convertir en bloque */
+    margin: 10% auto; /* Centrar horizontalmente */
+}
+
+.icono3 {
+    height: 88px;
+    display: block; /* Convertir en bloque */
+    margin: 10% auto; /* Centrar horizontalmente */
+}
+
+.icono4 {
+    height: 88px;
+    display: block; /* Convertir en bloque */
+    margin: 10% auto; /* Centrar horizontalmente */
+}
+
+.box-iconos{
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5%;
+}
+
+/*tienda*/
+
+.galeria{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  padding: 2rem 0 3rem;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.product img {
+  width: 14rem;
+}
+
+.galeria_button{
+  font-family: $font-family;
+  background-color: f9f9f9;
+  color: f9f9f9;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+  /*SOBRE NOSOTROS*/
+  .about-us {
+    margin: 30px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .about-us h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    margin-bottom: 15px;
+  }
+
+  /*rutinas*/
+
+  .rutinas {
+    height:max-content;
+    margin: 30px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+
+  .rutinas h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .rutinas p {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .rutinas ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .rutinas li {
+    margin-bottom: 5px;
+  }
+  
+  .rutinas img {
+    width: 100%;
+  }
+
+
+/*Compras*/
+
+.compras p{
+  text-align: center;
+}
+/*footer*/
+
+footer {
+    font-family: $font-family;
+    text-align: center;
+    padding-top: 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    
+}
+
+footer div {
+  padding: 3%;
+}
+
+footer span {
+  font-size: 0.7em;
+}
+
+.logo-redes {
+    height: 30px;
+    width: 30px;
+    align-content: center;
+    
+}
+
+
