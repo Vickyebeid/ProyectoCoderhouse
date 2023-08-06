@@ -60,6 +60,11 @@ header {
   font-weight: 900;
 }
 
+@media (max-width: 768px) {
+  .contenedorimagen h1 {
+    font-size: 150%;
+  }
+}
 /*main*/
 /*index*/
 main {
@@ -154,20 +159,61 @@ h2 {
   overflow: hidden;
 }
 
-.carousel-button {
-  align-items: center;
-  display: table-cell;
-  margin: 5% auto auto 46%;
+/*Boton bubbly*/
+.bubbly-button {
+  margin: 20px auto;
+  width: fit-content;
   font-family: "Montserrat", sans-serif;
-  background-color: #626161;
-  color: #f9f9f9;
-  border-radius: 10px;
+  font-size: 1em;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #e27791;
+  border-radius: 4px;
+  border: none;
   cursor: pointer;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
 }
-.carousel-button:hover {
-  animation: buttonAnimation 0.4s ease-in-out;
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, transparent 20%, #e27791 20%, transparent 30%), radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, transparent 10%, #e27791 15%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, transparent 10%, #e27791 15%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%), radial-gradient(circle, #e27791 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #de6280;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
 }
 
+.bubbly-button > a {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: white;
+  padding: 1em 2em;
+}
+
+/*Boton bubbly*/
 i {
   color: black;
   letter-spacing: 2px;
@@ -247,22 +293,22 @@ p {
 
 @keyframes buttonAnimation {
   0% {
-    background-color: #626161;
+    background-color: #f9f9f9;
     transform: scale(1);
   }
   50% {
-    background-color: #cccccc;
+    background-color: #f9f9f9;
     transform: scale(1.1);
   }
   100% {
-    background-color: #626161;
+    background-color: #f9f9f9;
     transform: scale(1);
   }
 }
 .galeria_button {
   font-family: "Montserrat", sans-serif;
-  background-color: #626161;
-  color: #f9f9f9;
+  background-color: #f9f9f9;
+  color: black;
   border: 1px solid black;
   border-radius: 10px;
   margin-top: 10px;
@@ -303,27 +349,35 @@ p {
   font-family: Arial, sans-serif;
 }
 
-.rutinas h1 {
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* Una columna */
+  grid-gap: 20px;
+  /* Espacio entre los elementos */
+}
+
+.grid-container h1 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.rutinas p {
+.grid-container p {
   margin-bottom: 15px;
   text-align: left;
 }
 
-.rutinas ul {
+.grid-container ul {
   list-style-type: disc;
   margin-left: 20px;
   margin-bottom: 15px;
 }
 
-.rutinas li {
+.rutgrid-containerinas li {
   margin-bottom: 5px;
 }
 
-.rutinas img {
+.grid-container img {
   width: 100%;
 }
 
