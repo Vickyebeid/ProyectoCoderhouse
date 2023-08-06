@@ -214,51 +214,37 @@ h2 {
 }
 
 /*Boton bubbly*/
-i {
-  color: black;
-  letter-spacing: 2px;
-}
-
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 95%;
   text-align: center;
+  font-size: 95%;
   margin-top: 2%;
   margin-bottom: 5px;
   overflow: auto;
 }
 
-.icono1 {
-  height: 100px;
+.icono, .icono4, .icono3, .icono2, .icono1 {
   display: block;
   /* Convertir en bloque */
   margin: 10% auto;
   /* Centrar horizontalmente */
+}
+
+.icono1 {
+  height: 100px;
 }
 
 .icono2 {
   height: 88px;
   align-content: center;
-  display: block;
-  /* Convertir en bloque */
-  margin: 10% auto;
-  /* Centrar horizontalmente */
 }
 
 .icono3 {
   height: 88px;
-  display: block;
-  /* Convertir en bloque */
-  margin: 10% auto;
-  /* Centrar horizontalmente */
 }
 
 .icono4 {
   height: 88px;
-  display: block;
-  /* Convertir en bloque */
-  margin: 10% auto;
-  /* Centrar horizontalmente */
 }
 
 .box-iconos {

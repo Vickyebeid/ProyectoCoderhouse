@@ -1,5 +1,13 @@
 @import'./vars';
 
+
+
+@mixin textStyles {
+    font-family: $font-family;
+    text-align: center;
+}
+
+
 /*header*/
 
 /*index*/
@@ -58,8 +66,7 @@ header {
 }
 
 .contenedorimagen h1 {
-    font-family: $font-family;
-    text-align: center;
+    @include textStyles;
     color: whitesmoke;
     font-size: $font-size-large;
     font-weight: $font-weight-bold;
@@ -154,15 +161,13 @@ main {
 }
 
 h1 {
-    font-family: $font-family;
-    text-align: center;
+    @include textStyles;
     margin-top: 4%;
     margin-bottom: 6%;
 }
 
 h2 {
-    font-family: $font-family;
-    text-align: center;
+    @include textStyles;
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-top: 15%;
@@ -192,7 +197,7 @@ h2 {
 .bubbly-button {
     margin: 20px auto;
     width: fit-content;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family;
     font-size: 1em;
     -webkit-appearance: none;
     appearance: none;
@@ -269,53 +274,40 @@ h2 {
 
 /*Boton bubbly*/
 
-i {
-    color: black;
-    letter-spacing: 2px;
-}
-
 p {
-    font-family: $font-family;
+    @include textStyles;    
     font-size: 95%;
-    text-align: center;
     margin-top: 2%;
     margin-bottom: 5px;
     overflow: auto;
 }
 
-
-.icono1 {
-    height: 100px;
+.icono {
     display: block;
     /* Convertir en bloque */
     margin: 10% auto;
     /* Centrar horizontalmente */
+}
+
+.icono1 {
+    @extend .icono;
+    height: 100px;
 }
 
 .icono2 {
+    @extend .icono;
     height: 88px;
     align-content: center;
-    display: block;
-    /* Convertir en bloque */
-    margin: 10% auto;
-    /* Centrar horizontalmente */
 }
 
-
 .icono3 {
+    @extend .icono;
     height: 88px;
-    display: block;
-    /* Convertir en bloque */
-    margin: 10% auto;
-    /* Centrar horizontalmente */
 }
 
 .icono4 {
+    @extend .icono;
     height: 88px;
-    display: block;
-    /* Convertir en bloque */
-    margin: 10% auto;
-    /* Centrar horizontalmente */
 }
 
 .box-iconos {
@@ -457,8 +449,7 @@ p {
 /*footer*/
 
 footer {
-    font-family: $font-family;
-    text-align: center;
+    @include textStyles;
     padding-top: 5%;
     margin-top: 10%;
     margin-bottom: 5%;
