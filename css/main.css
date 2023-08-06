@@ -45,7 +45,7 @@ header {
 
 .contenedorimagen {
   position: relative;
-  background-image: url("../ASSETS/portada.jpg");
+  background-image: url("../assets/portada.jpg");
   padding: 15%;
   background-size: cover;
   margin-bottom: 8%;
@@ -66,6 +66,61 @@ main {
   background-color: white;
 }
 
+.flash {
+  -webkit-animation-name: flash;
+  animation-name: flash;
+  -webkit-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: 0;
+  }
+}
+/*Animacion*/
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
 h1 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
@@ -86,7 +141,6 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20%;
 }
 
 .carousel-control-icon-width {
@@ -96,9 +150,22 @@ h2 {
 #carouselExampleIndicators {
   height: 700px;
   max-width: 500px;
-  margin: 0 auto;
-  margin-bottom: -100px;
+  margin: auto;
   overflow: hidden;
+}
+
+.carousel-button {
+  align-items: center;
+  display: table-cell;
+  margin: 5% auto auto 46%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #626161;
+  color: #f9f9f9;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.carousel-button:hover {
+  animation: buttonAnimation 0.4s ease-in-out;
 }
 
 i {
@@ -117,33 +184,47 @@ p {
 
 .icono1 {
   height: 100px;
-  display: block; /* Convertir en bloque */
-  margin: 10% auto; /* Centrar horizontalmente */
+  display: block;
+  /* Convertir en bloque */
+  margin: 10% auto;
+  /* Centrar horizontalmente */
 }
 
 .icono2 {
   height: 88px;
   align-content: center;
-  display: block; /* Convertir en bloque */
-  margin: 10% auto; /* Centrar horizontalmente */
+  display: block;
+  /* Convertir en bloque */
+  margin: 10% auto;
+  /* Centrar horizontalmente */
 }
 
 .icono3 {
   height: 88px;
-  display: block; /* Convertir en bloque */
-  margin: 10% auto; /* Centrar horizontalmente */
+  display: block;
+  /* Convertir en bloque */
+  margin: 10% auto;
+  /* Centrar horizontalmente */
 }
 
 .icono4 {
   height: 88px;
-  display: block; /* Convertir en bloque */
-  margin: 10% auto; /* Centrar horizontalmente */
+  display: block;
+  /* Convertir en bloque */
+  margin: 10% auto;
+  /* Centrar horizontalmente */
 }
 
 .box-iconos {
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin-bottom: 5%;
+  transition: transform 0.3s ease;
+}
+.box-iconos:hover {
+  transform: scale(1.05);
+  background-color: #dddddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*tienda*/
@@ -164,13 +245,31 @@ p {
   width: 14rem;
 }
 
+@keyframes buttonAnimation {
+  0% {
+    background-color: #626161;
+    transform: scale(1);
+  }
+  50% {
+    background-color: #cccccc;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: #626161;
+    transform: scale(1);
+  }
+}
 .galeria_button {
   font-family: "Montserrat", sans-serif;
-  background-color: f9f9f9;
-  color: f9f9f9;
+  background-color: #626161;
+  color: #f9f9f9;
   border: 1px solid black;
   border-radius: 10px;
   margin-top: 10px;
+  cursor: pointer;
+}
+.galeria_button:hover {
+  animation: buttonAnimation 0.4s ease-in-out;
 }
 
 /*SOBRE NOSOTROS*/
