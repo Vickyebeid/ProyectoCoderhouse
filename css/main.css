@@ -15,6 +15,10 @@ p {
   overflow: auto;
 }
 
+.row {
+  max-width: 100%;
+}
+
 /*header*/
 header {
   background-color: white;
@@ -225,6 +229,7 @@ h2 {
   letter-spacing: 5px;
   text-transform: uppercase;
   margin-top: 15%;
+  width: -webkit-fill-available;
 }
 
 /*CARROUSEL*/
@@ -287,7 +292,6 @@ h2 {
   display: flex;
   flex-flow: wrap;
   justify-content: center;
-  padding: 2rem 0 3rem;
 }
 
 .product {
@@ -356,6 +360,32 @@ h2 {
 .grid-container img {
   width: 100%;
 }
+.grid-container .container-pasos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+.grid-container .content-pasos {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.grid-container .content-pasos img {
+  width: 100px;
+  /* Ajusta el tamaño de la imagen según tus necesidades */
+  margin-right: 6%;
+  /* Espacio entre la imagen y el texto */
+  align-items: center;
+}
+.grid-container .content-pasos p {
+  flex: 1;
+  /* Ocupa todo el espacio restante */
+}
+.grid-container .content-pasos .paso-text {
+  flex: 1;
+  /* Ocupa todo el espacio restante */
+}
 
 /*Compras*/
 .compras {
@@ -366,9 +396,20 @@ h2 {
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .compras p {
   text-align: center;
+}
+.compras img {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+.compras h2 {
+  margin-top: 6%;
+}
+
+.titulos-tienda {
+  margin-top: 5%;
 }
 
 .banner_ofertas img {

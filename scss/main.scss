@@ -17,11 +17,15 @@ main {
 }
 
 p {
-    @include textStyles;    
+    @include textStyles;
     font-size: 95%;
     margin-top: 2%;
     margin-bottom: 5px;
     overflow: auto;
+}
+
+.row {
+    max-width: 100%;
 }
 
 /*header*/
@@ -43,7 +47,7 @@ header {
         justify-content: center;
         align-items: flex-start;
         margin-left: auto;
-    
+
 
         ul {
             list-style-type: none;
@@ -89,8 +93,8 @@ header {
     }
 
     @media(max-width: 768px) {
-        
-        h1{
+
+        h1 {
             font-size: 150%;
         }
     }
@@ -292,6 +296,7 @@ h2 {
     letter-spacing: 5px;
     text-transform: uppercase;
     margin-top: 15%;
+    width: -webkit-fill-available;
 }
 
 /*CARROUSEL*/
@@ -365,7 +370,6 @@ h2 {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    padding: 2rem 0 3rem;
 }
 
 .product {
@@ -443,21 +447,70 @@ h2 {
     img {
         width: 100%;
     }
+
+    .container-pasos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .content-pasos {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+
+        img {
+            width: 100px;
+            /* Ajusta el tamaño de la imagen según tus necesidades */
+            margin-right: 6%;
+            /* Espacio entre la imagen y el texto */
+            align-items: center;
+        }
+
+        p {
+            flex: 1;
+            /* Ocupa todo el espacio restante */
+        }
+
+        .paso-text {
+            flex: 1;
+            /* Ocupa todo el espacio restante */
+        }
+    }
+
 }
 
 
 /*Compras*/
 
-.compras{
+.compras {
     height: max-content;
     margin-left: 10%;
     margin-right: 10%;
     padding: 30px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    p {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+
+    h2 {
+        margin-top: 6%;
+    }
 }
-.compras p {
-    text-align: center;
+
+.titulos-tienda {
+    margin-top: 5%;
+
 }
 
 .banner_ofertas img {
