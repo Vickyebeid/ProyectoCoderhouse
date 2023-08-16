@@ -389,6 +389,9 @@ footer div {
 footer span {
   font-size: 0.7em;
 }
+footer h2 {
+  margin-top: 10%;
+}
 
 .logo-redes {
   height: 30px;
