@@ -289,7 +289,7 @@ p {
 .box-iconos {
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 5%;
+  margin-bottom: 60px;
   transition: transform 0.3s ease;
 }
 .box-iconos:hover {
@@ -427,13 +427,24 @@ p {
 .compras li h5 {
   text-decoration: underline;
 }
+.compras li p {
+  text-align: justify;
+}
 .compras img {
   width: 100%;
   display: flex;
   margin: auto;
 }
 .compras h2 {
-  margin-top: 6%;
+  margin-top: 4%;
+}
+.compras h3 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  width: -webkit-fill-available;
+  margin-top: 8%;
 }
 
 .titulos-tienda {
@@ -464,7 +475,7 @@ footer h6 {
   letter-spacing: 5px;
   text-transform: uppercase;
   width: -webkit-fill-available;
-  margin-top: 10%;
+  margin-top: 45px;
 }
 
 .logo-redes {
