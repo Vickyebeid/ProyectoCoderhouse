@@ -1,0 +1,6 @@
+/*Mixins*/
+
+@mixin textStyles {
+    font-family: $font-family;
+    text-align: center;
+}

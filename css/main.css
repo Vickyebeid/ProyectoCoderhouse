@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /*Variables e importaciones*/
+/*Variables*/
+/*Mixins*/
 /*Mixins*/
 /*header*/
 header {
@@ -193,23 +195,6 @@ p {
   max-width: 100%;
 }
 
-/* Estilos del contenedor de imágenes */
-.contenedorimagen {
-  position: relative;
-  background-image: url("../assets/portada.webp");
-  padding: 15%;
-  background-size: cover;
-  margin-bottom: 8%;
-  width: 100wh;
-}
-.contenedorimagen h1 {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  color: whitesmoke;
-  font-size: 300%;
-  font-weight: 900;
-}
-
 /*Estilo de titulos*/
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -226,22 +211,21 @@ h2 {
   width: -webkit-fill-available;
 }
 
-/*Estilos generales*/
-main {
-  background-color: white;
+/* Estilos del contenedor de imágenes */
+.contenedorimagen {
+  position: relative;
+  background-image: url("../assets/portada.webp");
+  padding: 15%;
+  background-size: cover;
+  margin-bottom: 8%;
+  width: 100wh;
 }
-
-p {
+.contenedorimagen h1 {
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  font-size: 95%;
-  margin-top: 2%;
-  margin-bottom: 5px;
-  overflow: hidden;
-}
-
-.row {
-  max-width: 100%;
+  color: whitesmoke;
+  font-size: 300%;
+  font-weight: 900;
 }
 
 /*CARROUSEL*/
@@ -304,13 +288,12 @@ p {
   flex-flow: wrap;
   justify-content: center;
 }
-
-.product {
+.galeria .product {
   display: flex;
   flex-direction: column;
   margin: 1rem;
 }
-.product img {
+.galeria .product img {
   width: 14rem;
   height: -webkit-fill-available;
 }
@@ -328,7 +311,6 @@ p {
   line-height: 1.5;
 }
 .about-us h2 {
-  font-size: 24px;
   margin-bottom: 20px;
 }
 .about-us p {
@@ -344,8 +326,7 @@ p {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
 }
-
-.grid-container {
+.rutinas .grid-container {
   display: grid;
   grid-template-columns: 1fr;
   /* Una columna */
@@ -354,51 +335,51 @@ p {
   padding: 40px;
   justify-content: center;
 }
-.grid-container h1 {
+.rutinas .grid-container h1 {
   font-size: 24px;
   margin-bottom: 20px;
   margin-top: 0;
 }
-.grid-container p {
+.rutinas .grid-container p {
   margin-bottom: 15px;
   text-align: left;
 }
-.grid-container ul {
+.rutinas .grid-container ul {
   list-style-type: disc;
   margin-left: 20px;
   margin-bottom: 15px;
 }
-.grid-container .rutgrid-containerinas li {
+.rutinas .grid-container .rutgrid-containerinas li {
   margin-bottom: 5px;
 }
-.grid-container img {
+.rutinas .grid-container img {
   width: 100%;
 }
-.grid-container .container-pasos {
+.rutinas .grid-container .container-pasos {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 30px;
 }
-.grid-container .content-pasos {
+.rutinas .grid-container .content-pasos {
   display: flex;
   align-items: center;
   width: 100%;
   margin-left: 10%;
   margin-right: 10%;
 }
-.grid-container .content-pasos img {
+.rutinas .grid-container .content-pasos img {
   width: 100px;
   /* Ajusta el tamaño de la imagen según tus necesidades */
   margin-right: 6%;
   /* Espacio entre la imagen y el texto */
   align-items: center;
 }
-.grid-container .content-pasos p {
+.rutinas .grid-container .content-pasos p {
   flex: 1;
   /* Ocupa todo el espacio restante */
 }
-.grid-container .content-pasos .paso-text {
+.rutinas .grid-container .content-pasos .paso-text {
   flex: 1;
   /* Ocupa todo el espacio restante */
 }
@@ -414,7 +395,8 @@ p {
 }
 .compras p {
   text-align: center;
-  margin-bottom: 6%;
+  margin-bottom: 4%;
+  margin-top: 20px;
 }
 .compras li {
   font-family: "Montserrat", sans-serif;
@@ -436,7 +418,7 @@ p {
   margin: auto;
 }
 .compras h2 {
-  margin-top: 4%;
+  margin-bottom: 2%;
 }
 .compras h3 {
   font-family: "Montserrat", sans-serif;
@@ -444,7 +426,7 @@ p {
   letter-spacing: 5px;
   text-transform: uppercase;
   width: -webkit-fill-available;
-  margin-top: 8%;
+  margin-top: 25px;
 }
 
 .titulos-tienda {
