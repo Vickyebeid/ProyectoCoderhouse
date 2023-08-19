@@ -1,0 +1,48 @@
+/*header*/
+
+header {
+    background-color: $color-white;
+    padding: 10px;
+    display: flex;
+    margin-bottom: 10px;
+
+
+    .logo {
+
+        height: 30px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: auto;
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            margin-left: 10px;
+
+
+            :first-child {
+                margin-left: 0;
+            }
+
+            a {
+                text-decoration: underline;
+                font-family: $font-family;
+                font-size: $font-size-small;
+                text-transform: uppercase;
+                color: black;
+            }
+        }
+    }
+}

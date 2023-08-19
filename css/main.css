@@ -1,24 +1,6 @@
 @charset "UTF-8";
 /*Variables e importaciones*/
 /*Mixins*/
-/*Estilos generales*/
-main {
-  background-color: white;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  font-size: 95%;
-  margin-top: 2%;
-  margin-bottom: 5px;
-  overflow: auto;
-}
-
-.row {
-  max-width: 100%;
-}
-
 /*header*/
 header {
   background-color: white;
@@ -46,7 +28,7 @@ header .navbar ul {
 header .navbar li {
   margin-left: 10px;
 }
-header .navbar li:first-child {
+header .navbar li :first-child {
   margin-left: 0;
 }
 header .navbar li a {
@@ -55,28 +37,6 @@ header .navbar li a {
   font-size: small;
   text-transform: uppercase;
   color: black;
-}
-
-/* Estilos del contenedor de imágenes */
-.contenedorimagen {
-  position: relative;
-  background-image: url("../assets/portada.jpg");
-  padding: 15%;
-  background-size: cover;
-  margin-bottom: 8%;
-  width: 100wh;
-}
-.contenedorimagen h1 {
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  color: whitesmoke;
-  font-size: 300%;
-  font-weight: 900;
-}
-@media (max-width: 768px) {
-  .contenedorimagen h1 {
-    font-size: 150%;
-  }
 }
 
 /*Estilo de animaciones*/
@@ -215,6 +175,41 @@ header .navbar li a {
   animation: buttonAnimation 0.4s ease-in-out;
 }
 
+/*Estilos generales*/
+main {
+  background-color: white;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 95%;
+  margin-top: 2%;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.row {
+  max-width: 100%;
+}
+
+/* Estilos del contenedor de imágenes */
+.contenedorimagen {
+  position: relative;
+  background-image: url("../assets/portada.webp");
+  padding: 15%;
+  background-size: cover;
+  margin-bottom: 8%;
+  width: 100wh;
+}
+.contenedorimagen h1 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 300%;
+  font-weight: 900;
+}
+
 /*Estilo de titulos*/
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -228,8 +223,25 @@ h2 {
   text-align: center;
   letter-spacing: 5px;
   text-transform: uppercase;
-  margin-top: 15%;
   width: -webkit-fill-available;
+}
+
+/*Estilos generales*/
+main {
+  background-color: white;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 95%;
+  margin-top: 2%;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.row {
+  max-width: 100%;
 }
 
 /*CARROUSEL*/
@@ -244,7 +256,6 @@ h2 {
 }
 
 #carouselExampleIndicators {
-  height: 700px;
   max-width: 500px;
   margin: auto;
   overflow: hidden;
@@ -301,6 +312,7 @@ h2 {
 }
 .product img {
   width: 14rem;
+  height: -webkit-fill-available;
 }
 
 /*SOBRE NOSOTROS*/
@@ -328,7 +340,6 @@ h2 {
   height: max-content;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 30px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   font-family: Arial, sans-serif;
@@ -340,10 +351,13 @@ h2 {
   /* Una columna */
   grid-gap: 20px;
   /* Espacio entre los elementos */
+  padding: 40px;
+  justify-content: center;
 }
 .grid-container h1 {
   font-size: 24px;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 .grid-container p {
   margin-bottom: 15px;
@@ -370,6 +384,8 @@ h2 {
   display: flex;
   align-items: center;
   width: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .grid-container .content-pasos img {
   width: 100px;
@@ -398,6 +414,18 @@ h2 {
 }
 .compras p {
   text-align: center;
+  margin-bottom: 6%;
+}
+.compras li {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 95%;
+  margin-top: 2%;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.compras li h5 {
+  text-decoration: underline;
 }
 .compras img {
   width: 100%;
@@ -430,7 +458,12 @@ footer div {
 footer span {
   font-size: 0.7em;
 }
-footer h2 {
+footer h6 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  width: -webkit-fill-available;
   margin-top: 10%;
 }
 
@@ -438,6 +471,18 @@ footer h2 {
   height: 30px;
   width: 30px;
   align-content: center;
+}
+
+@media (max-width: 768px) {
+  .contenedorimagen h1 {
+    font-size: 150%;
+  }
+  .grid-container .content-pasos {
+    flex-direction: column;
+  }
+  .grid-container img {
+    margin-bottom: 3%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

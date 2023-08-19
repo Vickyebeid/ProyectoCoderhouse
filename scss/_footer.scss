@@ -1,0 +1,29 @@
+/*footer*/
+
+footer {
+    @include textStyles;
+    margin-bottom: 5%;
+
+    div {
+        padding: 3%;
+    }
+
+    span {
+        font-size: 0.7em;
+    }
+
+    h6 {
+        @include textStyles;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        width: -webkit-fill-available;
+        margin-top: 10%;
+    }
+}
+
+.logo-redes {
+    height: 30px;
+    width: 30px;
+    align-content: center;
+
+}

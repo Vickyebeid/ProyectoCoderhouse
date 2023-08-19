@@ -1,0 +1,310 @@
+/*Estilos generales*/
+
+main {
+    background-color: $color-white;
+}
+
+p {
+    @include textStyles;
+    font-size: 95%;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.row {
+    max-width: 100%;
+}
+
+
+/* Estilos del contenedor de imágenes */
+.contenedorimagen {
+    position: relative;
+    background-image: url("../assets/portada.webp");
+    padding: 15%;
+    background-size: cover;
+    margin-bottom: 8%;
+    width: 100wh;
+
+    h1 {
+        @include textStyles;
+        color: whitesmoke;
+        font-size: $font-size-large;
+        font-weight: $font-weight-bold;
+    }
+
+}
+
+/*Estilo de titulos*/
+h1 {
+    @include textStyles;
+    margin-top: 4%;
+    margin-bottom: 6%;
+}
+
+h2 {
+    @include textStyles;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    width: -webkit-fill-available;
+}
+
+
+
+/*Estilos generales*/
+
+main {
+    background-color: $color-white;
+}
+
+p {
+    @include textStyles;
+    font-size: 95%;
+    margin-top: 2%;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.row {
+    max-width: 100%;
+}
+
+
+
+
+/*CARROUSEL*/
+
+.carousel slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-control-icon-width {
+    width: 1rem
+}
+
+#carouselExampleIndicators {
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/*Estilo de iconos*/
+
+.icono {
+    display: block;
+    /* Convertir en bloque */
+    margin: 10% auto;
+    /* Centrar horizontalmente */
+}
+
+.icono1 {
+    @extend .icono;
+    height: 100px;
+}
+
+.icono2 {
+    @extend .icono;
+    height: 88px;
+    align-content: center;
+}
+
+.icono3 {
+    @extend .icono;
+    height: 88px;
+}
+
+.icono4 {
+    @extend .icono;
+    height: 88px;
+}
+
+.box-iconos {
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5%;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: #dddddd;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+/*tienda*/
+
+.galeria {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+    img {
+        width: 14rem;
+        height: -webkit-fill-available;
+    }
+}
+
+
+/*SOBRE NOSOTROS*/
+.about-us {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+}
+
+/*rutinas*/
+
+.rutinas {
+    height: max-content;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Una columna */
+    grid-gap: 20px;
+    /* Espacio entre los elementos */
+    padding: 40px;
+    justify-content: center;
+
+    h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    p {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .rutgrid-containerinas li {
+        margin-bottom: 5px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .container-pasos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px;
+    }
+
+    .content-pasos {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+
+
+        img {
+            width: 100px;
+            /* Ajusta el tamaño de la imagen según tus necesidades */
+            margin-right: 6%;
+            /* Espacio entre la imagen y el texto */
+            align-items: center;
+        }
+
+        p {
+            flex: 1;
+            /* Ocupa todo el espacio restante */
+        }
+
+        .paso-text {
+            flex: 1;
+            /* Ocupa todo el espacio restante */
+        }
+    }
+
+}
+
+
+/*Compras*/
+
+.compras {
+    height: max-content;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 30px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    p {
+        text-align: center;
+        margin-bottom: 6%;
+    }
+
+    li {
+        @include textStyles;
+        font-size: 95%;
+        margin-top: 2%;
+        margin-bottom: 5px;
+        overflow: hidden;
+
+        h5{
+            text-decoration: underline;
+        }
+    }
+
+    img {
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
+
+    h2 {
+        margin-top: 6%;
+    }
+}
+
+.titulos-tienda {
+    margin-top: 5%;
+
+}
+
+.banner_ofertas img {
+    margin-top: 6%;
+    width: 100%;
+    opacity: 85%;
+}
+
