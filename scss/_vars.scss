@@ -9,10 +9,3 @@ $button-bg: $fuschia;
 $button-text-color: #fff;
 $baby-blue: #f8faff;
 
-
-/*Mixins*/
-
-@mixin textStyles {
-    font-family: $font-family;
-    text-align: center;
-}

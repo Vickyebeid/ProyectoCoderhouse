@@ -1,0 +1,42 @@
+@media(max-width: 768px) {
+
+    .contenedorimagen h1 {
+        font-size: 150%;
+    }
+
+    .grid-container {
+        .content-pasos {
+            flex-direction: column;
+        }
+
+        img {
+            margin-bottom: 3%;
+        }
+    }
+
+    .icono1 {
+        height: 90px;
+    }
+
+    .icono2 {
+        height: 80px;
+    }
+
+    .icono3 {
+        height: 80px;
+    }
+
+    .icono4 {
+        height: 80px;
+    }
+
+    .rutinas {
+        .grid-container {
+            .content-pasos {
+                img {
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
